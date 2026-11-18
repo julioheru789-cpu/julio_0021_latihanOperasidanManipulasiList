@@ -1,0 +1,43 @@
+#nomor 1
+print("Nomor 1")
+kendaraan = ["motor", "mobil", "sepeda", "bus"]
+kendaraan.append("truk")
+print(f"a. Menambahkan truk di akhir list = {kendaraan}") 
+kendaraan.insert(1, "becak")
+print(f"b. Sisipkan becak pada index ke-1 = {kendaraan}")
+kendaraan.pop()
+print(f"c. Hapus data yang berada paling belakang dari list = {kendaraan}")
+idx = kendaraan.index("sepeda")
+kendaraan[idx] = "skuter"
+print(f"d. mengubah elemen sepeda menjadi skuter = {kendaraan}")
+banyak_kendaraan = len(kendaraan)
+print(f"e. Banyak kendaraan adalah = {banyak_kendaraan}")
+
+#nomor 2
+print("\nNomor 2")
+angka = [75, 80 , 90, 75, 85, 100, 65]
+print(f"a. index skor 100 = {angka.index(100)}")
+print(f"b. Banyak anak yang mendapat 75 = {angka.count(75)}")
+angka.sort()
+print(f"c. skor nilai ujian terurut = {angka} ")
+angka.reverse()
+print(f"d. Urutan nilai dari terbesar ke terkecil = {angka}")
+
+#nomor 3
+print("\nNomor 3")
+menu_utama = ["nasi goreng", "mie ayam"]
+menu_tambahan = ["kerupuk", "es teh"]
+menu_utama.extend(menu_tambahan)
+print(f"hasil data = {menu_utama}")
+
+#nomor 4 
+print("\nNomor 4")
+data_barang = [["buku", 5000], ["pensil", 2000], ["penggaris", 3000]]
+print("a. Harga pensil = ",data_barang[1][1])
+
+for barang in data_barang:
+    print(f"Nama : {barang[0]}, Harga : {barang[1]}")
+
+
+
+
